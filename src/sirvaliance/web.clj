@@ -1,12 +1,30 @@
 (ns sirvaliance.web
-  (:use ring.adapter.jetty))
+  (:use [compojure.core]
+        [ring.middleware.reload]
+        [ring.middleware.stacktrace]
+        [clostache.parser])
+  (:require [compojure.route :as route]
+            [compojure.handler :as handler]
+            [ring.adapter.jetty :as ring]
+            ))
 
-(defn app [req]
-  {:status 200
-   :headers {"Content-Type" "text/plain"}
-   :body "Hello, world"})
+(defroutes app-routes 
+  (GET "/" [] (render (slurp "templates/base.html") {:content (slurp "templates/main.html")
+                                                     :head ""}))
+  (route/files "/static" {:root "static"}))
+
+
+
+(def app 
+     (-> (var app-routes)
+         (wrap-reload '(sirvaliance.web))
+         (wrap-stacktrace)))
+
+(defn start [port]
+  (ring/run-jetty (var app) {:port (or port 8080) :join? false}))
+
 
 (defn -main []
   (let [port (Integer/parseInt (get (System/getenv) "PORT" "8080"))]
-    (run-jetty app {:port port})))
+    (start port)))
 

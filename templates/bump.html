@@ -1,0 +1,141 @@
+{% extends "bump_base.html" %}
+
+{% block head %}
+
+{% endblock %}
+
+{% block content %}
+
+<div id="bump_main">
+    <div class="container_12">
+        <div class="grid_6 suffix_1">
+            <h1 id="bump_title">Hi Bump!</h1>
+            <div id="title_text">
+                <p>I go by the name Sir Valiance. I am a full stack web developer and security, privacy, and anonymity enthusiast who would love to join Bump.          </p>
+            </div>
+        </div>
+        <div class="grid_4" id="portrait_box">
+            <img src="{{ STATIC_URL }}img/portrait.png" />
+            <p>This is a portrait of me on a typical afternoon.</p>
+        </div>
+
+        <div class="clear"></div>
+        <div class="main_text_box">
+            <div class="grid_8 prefix_2 suffix_2 alpha">
+                <p class="headline_text">Let me tell you more about myself and why I would be a great fit in the organization.</p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_5 prefix_1 alpha">
+                <h2>Why Bump?</h2>
+                <p>Simply because Bump is a great product that I would like to work on.  I would love the opportunity to work with intelligent people in a fast paced work environment.  As a long time HN user, I would love to be a part of a Y Combinator company.  I have always worked with startups, small teams, and would love to be part of Bump's culture and work style.</p>
+            </div>
+            <div class="grid_5 omega">
+            <h2>What Do I Currently Do?</h2>
+            <p>I currently work as a Freelance web developer and operate as the Founder of <a href="https://crypto.is">The Crypto Project</a>.  As part of The Crypto Project, I maintain the website and services as well as act as an administrator to the network.  My freelance work is primarily focused on Web Developement, Design, and Server Administration.</p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_5 prefix_1 alpha">
+                <h2>Why This Position?</h2>
+                <p>I have experience writing for mobile platforms and would really like the opportunity to focus on and develop expertise in both Android and iOS.  I understand design, user interfaces, and how to build products from the bottom up with that in consideration.  I would love to have the opportunity to move out to San Francisco and be a part of Bump.</p>
+            </div>
+            <div class="grid_5 omega">
+                <h2>Why Me?</h2>
+                <p>I am a jack of all trades and a master of many.  I understand the full stack of web development, can hack on anything, and feel as though I am language agnostic.  You could put me in front of any framework, language, or server setup, and I will produce great results in as short as a timeframe as possible.  Let me tell you more about my most recent work.</p>
+
+            </div>
+            <div class="clear"></div>
+        <p class="headline_text">The Crypto Project<p>
+            <div class="grid_4 prefix_1 alpha">
+                <img class="img_margin_50" src="{{ STATIC_URL }}img/crypto-sh.png" />
+            </div>
+            <div class="grid_6 omega">
+                <p>I founded <a href="https://crypto.is">The Crypto Project</a> and it officially <a href="https://twitter.com/#!/cryptodotis/status/91771687233785856">launched on July 15</a>.  From the website, &#8220;The Crypto Project is an organization designed to assist and encourage anonymity and encryption research, development, and use&#8221;.  The project has 4 goals:
+                <ul>
+                    <li>Building a website that becomes an authoritative, reliable, and current resource for those learning how to achieve privacy, security, and anonymity.</li>
+                    <li>Bringing the security, cryptography, and development communities together to work on projects, discuss ideas, and unite to create progress.</li>
+                    <li>Build a large network of anonymity, privacy, and censorship circumvention services.</li>
+                    <li>Create, assist in creating, promote, and help others use software to achieve privacy, security, and anonymity.</li>
+                </ul>
+                    
+                </p>
+            </div>
+            <div class="clear"></div>
+            <div class="grid_7 prefix_1 alpha">
+                <h2>Recent Press and Progress</h2>
+                <p>We have been lucky enough to have a two part <a href="https://threatpost.com/en_us/blogs/behind-scenes-crypto-project-083011">Interview with Threatpost</a> as well as being covered in <a href="http://yro.slashdot.org/story/11/08/31/0424251/The-Crypto-Project-Revives-Cypherpunk-Ethic?utm_source=slashdot&utm_medium=twitter">Slashdot</a>. <a href="https://blog.crypto.is/TCP-Newsletter-One/">In our first month</a>, we saw plenty of progress being made which I am especially proud of.  We consistently have 60-80 members in the IRC chatroom discussing, collaborating, and working on various projects.  We have so many intelligent and friendly contributors and it makes me so proud to say I was a catalyst to make it happen.</p>
+            </div>
+            <div class="grid_3 omega">
+                <img class="img_float img_margin" src="{{ STATIC_URL }}img/logo.png" />
+            </div>
+
+            <div class="clear"></div>
+            <p class="headline_text">My Work on The Crypto Project</p>
+            <div class="grid_5 prefix_1 alpha">
+                <p>As the founder, I orginally conceived the idea and designed and built out the website within the span of a day (when I work, I work fast).  I originally built the site using <a href="http://tornadoweb.org">Tornado</a>, but once it became clear we needed a wiki for user contributed content I devised a different architecture.  For visual design and security reasons, I was hesitant to use any of the wiki software out there and decided our best option was to create a repository of Markdown templates.  I forked and modified <a href="https://github.com/sirvaliance/gollum">Gollum</a> for our <a href="https://wiki.crypto.is">Wiki</a>, and subsequently built (hacked together is a better term) a static site generator called <a href="https://github.com/sirvaliance/hoggle">Hoggle</a> to build both our site and <a href="https://blog.crypto.is">blog</a>.  All of our server builds and updates are automated and managed through <a href="http://docs.fabfile.org/en/1.2.2/index.html">Fabric Scripts</a>.  I am passionate and a strong believer in automating anything that can be automated.  I recently wrote an IRC bot to automate any of the responsibilities that I previously had.  Approved users can trigger site rebuilds, post to the blog, and post tweets all from IRC.</p>
+            </div>
+            <div class="grid_5 omega">
+                <p>As well as writing and setting up our website, I have set up and work as an administrator to our <a href="https://crypto.is/projects/network/">Network</a>.  In our network, I have setup and operate a <a href="https://www.torproject.org/">Tor Relay</a>, a <a href="http://mixminion.net/">Mixminion Relay</a>, a <a href="http://convergence.io/">Convergence Notary</a>, a <a href="https://torproject.crypto.is/">TorProject.org Mirror</a>, and have begun work on a <a href="http://tahoe-lafs.org/trac/tahoe-lafs">Tahoe-LAFS</a> grid behind Tor hidden services.  All of our services run behind an Nginx reverse SSL proxy and we like to implement secure features like <a href="https://secure.wikimedia.org/wikipedia/en/wiki/HTTP_Strict_Transport_Security">HSTS</a>.</p>
+                <p>I am a passionate developer who spends my day's working on open-source code, talking to hacker friends on IRC, and working as an activist for open source software and knowledge, particularly related to privacy, anonymity, and security.  I would love to bring the passion and talent exemplified in current work to Bump!
+            </div>
+            <div class="clear"></div>
+
+            <p class="headline_text">What are my interests?</p>
+
+            <div class="grid_5 prefix_1 alpha">
+                <h2>My Research and Bookshelf</h2>
+                <p>My current interests are reading and researching security, anonymity, and privacy texts and constantly expanding my knowledge as a developer and creator.  I continually push myself to become better, more efficient, and always search to discover new tools, methodologies, and approaches to the act of creation.</p>
+                <p>I have a mini library of authoritative texts on various topics that I am pushing my way through, from SICP to the Dragon book, I hope to get through them all.  I have an interest in remailers and mixnets, and love reading white papers from <a href="http://www.freehaven.net/anonbib/">AnonBib</a>.</p>
+            </div>
+            <div class="grid_5 omega">
+                <img class="img_float" src="{{ STATIC_URL }}img/books.png" />
+            </div>
+            <div class="clear"></div>
+            <div class="grid_4 prefix_1 alpha">
+                <img src="{{ STATIC_URL }}img/len-cover.png" />
+
+            </div>
+            <div class="grid_6 omega">
+                <h2>I Also Make Music</h2>
+                <p>My other passion and hobby is creating music.  I primarily play the guitar as well as other instruments and post my music on the web.  My latest work can be found at my <a href="http://sirvaliance.bandcamp.com/">Bandcamp page</a>.  My latest release is a compilation album dedicated to the late <a href="https://secure.wikimedia.org/wikipedia/en/wiki/Len_Sassaman">Len Sassaman</a> (who was someone I looked up to), titled &#8220;A Waltz for Len&#8221;.</p>
+            </div>
+            <div class="clear"></div>
+            </div>
+        <div class="clear"></div>
+        <div id="quote_wrapper">
+
+            <p class="headline_text">What Others Have Said About Me</p>
+
+            <div class="grid_4 alpha">
+                <p class="quote_text">&#8220;I've done web development professionally myself for several years, and I've worked with great developers and great designers - and never the twain have met.  After working with Sir for the past several months, I can say he is the exception.&#8221;</p>
+                <p class="quote_name">- <a href="https://twitter.com/#!/tomrittervg">Tom Ritter</a></p>
+            </div>
+            <div class="grid_4">
+                <p class="quote_text">&#8220;I can definitely vouch for your abilities to work well with technical people remotely and for your ability to see a project through well without somebody standing over your shoulder&#8221;</p>
+                <p class="quote_name">- <a href="http://twitter.com/#!/nickm_tor">Nick Mathewson</a></p>
+            </div>
+            <div class="grid_4 omega">
+                <p class="quote_text">&#8220;
+After experiencing the pleasure of working regularly with Sir on the Crypto
+Project, I can say with great certainty that the only thing which eclipses his
+potential as a developer is his drive and personal sacrifice to bring his
+project to completion.
+                &#8221;</p>
+                <p class="quote_name">- <a href="http://twitter.com/#!/antagonismorg">Patrick R McDonald</a></p>
+            </div>
+
+
+            <div class="clear"></div>
+        </div>
+        <div class="grid_6 prefix_3 suffix_3">
+            <div id="closer_box" class="small_text_box">
+                <p class="headline_text">Where do we go from here?</p>
+                <p>Hopefully after viewing this application you would like to talk!  I know this was done pseudonymously, but I will gladly supply my personal information, education, work history, more examples, standard resume and availablity for phone, video, or other types of interviews.</p>
+                <p>To contact me, I am available via <a href="mailto:sir@sirvaliance.com">email</a> and on Twitter either at <a href="https://twitter.com/#!/sirvaliance">@sirvaliance</a> or <a href="https://twitter.com/#!/cryptodotis">@cryptodotis</a>.  I appreciate your time spent reading this and hope to talk soon!</p>
+                <div class="clear"></div>
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+

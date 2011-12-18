@@ -1,0 +1,46 @@
+<script type="text/javascript">
+$(document).ready(function(){
+	$('li.menu_item').hover(function(){
+		$(this).prepend('<span class="arrow">&rArr;</span>');	
+
+	}, function (){
+		$(this).children('.arrow').remove();
+
+	});
+});
+
+</script>
+
+<div class="grid_12">
+	<h1>Sir Valiance</h1>
+</div>
+<div class="grid_6 h_100">
+</div>
+<div id="bio" class="grid_3">
+    <p>An anonymous programmer, hacker, musician, and artist.  Founder of <a href="https://crypto.is">The Crypto Project</a>. Thanks to <a href="http://gondor.io">Gondor.io</a> for the hosting of the site.</p>
+</div>
+<div id="link_list" class="grid_3">
+	<ul>
+		<li class="menu_item">
+			<a target="_blank" href="http://blog.sirvaliance.com">Blog</a>
+		</li>
+		<li class="menu_item">
+			<a target="_blank" href="http://sirvaliance.bandcamp.com">Music</a>
+		</li>
+		<li class="menu_item">
+			<a target="_blank" href="http://github.com/sirvaliance/">Code</a>
+		</li>
+		<li class="menu_item">
+			<a target="_blank" href="http://crypto.is/">Crypto.is</a>
+		</li>
+
+		<li class="menu_item">
+			<a href="mailto:sir@sirvaliance.com">Email</a>
+		</li>
+		<li class="menu_item">
+			<a target="_blank" href="/static/files/sirvaliance-gpg.asc">GPG Key</a>
+		</li>
+	</ul>
+
+</div>
+
