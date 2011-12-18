@@ -20,6 +20,7 @@
   (GET "/bump/" [] (render-temp "templates/base.html" "templates/main.html"))
   (GET "/bittorrent/" [] (render-temp "templates/base.html" "templates/main.html"))
   (GET "/mixpanel/" [] (render-temp "templates/base.html" "templates/main.html"))
+  (GET "/robots.txt" [] "User-agent: * \r\n Disallow:")
   (route/files "/static" {:root "static"}))
 
 (def app 
