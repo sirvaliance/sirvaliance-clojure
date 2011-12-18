@@ -1,11 +1,3 @@
-{% extends "bittorrent_base.html" %}
-
-{% block head %}
-
-{% endblock %}
-
-{% block content %}
-
 <div id="bittorrent_main">
     <div class="container_12">
         <div class="grid_6 suffix_1">
@@ -15,7 +7,7 @@
             </div>
         </div>
         <div class="grid_4" id="portrait_box">
-            <img src="{{ STATIC_URL }}img/portrait.png" />
+            <img src="/static/img/portrait.png" />
             <p>This is a portrait of me on a typical afternoon.</p>
         </div>
 
@@ -46,7 +38,7 @@
             <div class="clear"></div>
         <p class="headline_text">The Crypto Project<p>
             <div class="grid_4 prefix_1 alpha">
-                <img class="img_margin_50" src="{{ STATIC_URL }}img/crypto-sh.png" />
+                <img class="img_margin_50" src="/static/img/crypto-sh.png" />
             </div>
             <div class="grid_6 omega">
                 <p>I founded <a href="https://crypto.is">The Crypto Project</a> and it officially <a href="https://twitter.com/#!/cryptodotis/status/91771687233785856">launched on July 15</a>.  From the website, &#8220;The Crypto Project is an organization designed to assist and encourage anonymity and encryption research, development, and use&#8221;.  The project has 4 goals:
@@ -65,7 +57,7 @@
                 <p>We have been lucky enough to have a two part <a href="https://threatpost.com/en_us/blogs/behind-scenes-crypto-project-083011">Interview with Threatpost</a> as well as being covered in <a href="http://yro.slashdot.org/story/11/08/31/0424251/The-Crypto-Project-Revives-Cypherpunk-Ethic?utm_source=slashdot&utm_medium=twitter">Slashdot</a>. <a href="https://blog.crypto.is/TCP-Newsletter-One/">In our first month</a>, we saw plenty of progress being made which I am especially proud of.  We consistently have 60-80 members in the IRC chatroom discussing, collaborating, and working on various projects.  We have so many intelligent and friendly contributors and it makes me so proud to say I was a catalyst to make it happen.</p>
             </div>
             <div class="grid_3 omega">
-                <img class="img_float img_margin" src="{{ STATIC_URL }}img/logo.png" />
+                <img class="img_float img_margin" src="/static/img/logo.png" />
             </div>
 
             <div class="clear"></div>
@@ -87,11 +79,11 @@
                 <p>I have a mini library of authoritative texts on various topics that I am pushing my way through, from SICP to the Dragon book, I hope to get through them all.  I have an interest in remailers and mixnets, and love reading white papers from <a href="http://www.freehaven.net/anonbib/">AnonBib</a>.</p>
             </div>
             <div class="grid_5 omega">
-                <img class="img_float" src="{{ STATIC_URL }}img/books.png" />
+                <img class="img_float" src="/static/img/books.png" />
             </div>
             <div class="clear"></div>
             <div class="grid_4 prefix_1 alpha">
-                <img src="{{ STATIC_URL }}img/len-cover.png" />
+                <img src="/static/img/len-cover.png" />
 
             </div>
             <div class="grid_6 omega">
@@ -137,5 +129,3 @@ project to completion.
         </div>
     </div>
 </div>
-{% endblock %}
-

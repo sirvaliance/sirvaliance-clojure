@@ -1,12 +1,11 @@
 <html>
 <head>
 	<title>Sir Valiance</title>
-	<link href="{{ STATIC_URL }}img/favicon.png" rel="icon" type="image/x-png" />
+	<link href="/static/img/favicon.png" rel="icon" type="image/x-png" />
 	<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/960.css" />
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css" />
-	{% block head %}
-	{% endblock %}
+	<link rel="stylesheet" type="text/css" href="/static/css/960.css" />
+	<link rel="stylesheet" type="text/css" href="/static/css/style.css" />
+    {{{ head }}}
 </head>
 <body>
 	<div id="header_wrap">
@@ -17,8 +16,7 @@
 			</div>
 		</div>
 	</div>
-	{% block content %}
-	{% endblock %}
+    {{{ content }}}
 	<div id="footer_wrap">
 		<div id="footer" class="container_12">
 		</div>
