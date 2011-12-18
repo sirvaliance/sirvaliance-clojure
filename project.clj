@@ -3,4 +3,4 @@
   :dependencies [[org.clojure/clojure "1.3.0"]
                  [ring "1.0.0"]
                  [compojure "0.6.4"]
-                 [de.ubercode.clostache/clostache "0.6.0"]])
+                 [stencil "0.2.0"]])
