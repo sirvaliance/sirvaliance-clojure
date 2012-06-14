@@ -17,10 +17,6 @@
 (defroutes app-routes 
   (GET "/" [] (render-temp "base.html" "main.html"))
   (GET "/mozilla/" [] (render-temp "mozilla_base.html" "mozilla.html"))
-  (GET "/apple/" [] (render-temp "apple_base.html" "apple.html"))
-  (GET "/bump/" [] (render-temp "bump_base.html" "bump.html"))
-  (GET "/bittorrent/" [] (render-temp "bittorrent_base.html" "bittorrent.html"))
-  (GET "/mixpanel/" [] (render-temp "mixpanel_base.html" "mixpanel.html"))
   (GET "/robots.txt" [] "User-agent: * \r\n Disallow:")
   (route/files "/static" {:root "static"})
   (route/not-found (render-temp "base.html" "404.html")))
